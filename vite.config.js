@@ -12,5 +12,5 @@ import react from '@vitejs/plugin-react'
 //   ],
 // })
 export default {
-  base: '/',
+ base: '/ellen0825.github.io/',
 };
