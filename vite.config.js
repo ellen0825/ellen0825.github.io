@@ -11,6 +11,6 @@ import react from '@vitejs/plugin-react'
 //     }),
 //   ],
 // })
-export default {
- base: '/ellen0825.github.io/',
-};
+export default defineConfig({
+  base: '/',  
+});
