@@ -12,5 +12,6 @@ import react from '@vitejs/plugin-react'
 //   ],
 // })
 export default {
-  base: '/ellen0825.github.io/', // GitHub Pages에 배포할 때의 경로
+  // base: '/ellen0825.github.io/',
+  base: '/',
 };
