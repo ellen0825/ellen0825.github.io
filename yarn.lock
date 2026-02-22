@@ -391,7 +391,7 @@
   dependencies:
     csstype "^3.2.2"
 
-"@vitejs/plugin-react@^5.1.1":
+"@vitejs/plugin-react@^5.1.4":
   version "5.1.4"
   resolved "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-5.1.4.tgz"
   integrity sha512-VIcFLdRi/VYRU8OL/puL7QXMYafHmqOnwTZY50U1JPlCNj30PxCMx65c494b1K9be9hX83KVt0+gTEwTWLqToA==

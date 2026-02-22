@@ -1,16 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
-// export default defineConfig({
-//   plugins: [
-//     react({
-//       babel: {
-//         plugins: [['babel-plugin-react-compiler']],
-//       },
-//     }),
-//   ],
-// })
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',  
+  plugins: [react()],
+  base: '/',  // 앱이 루트 경로에서 호스팅된다고 가정
 });
