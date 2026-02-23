@@ -20,15 +20,15 @@ export default function About() {
           </h2>
 
           <p className="text-gray-300 leading-relaxed">
-            I am a Senior Backend Engineer with **5+ years of commercial experience** in designing and building high-performance, scalable backend systems. With a focus on **Python** (FastAPI, asynchronous programming), **microservices architecture**, and **PostgreSQL performance optimization**, I specialize in crafting systems that power real-time, mission-critical applications.
+            I’m a Full-Stack Developer with 5 years of experience in both backend and frontend development. I specialize in building reliable, scalable systems with **FastAPI**, **Spring Boot**, and **React**. My focus is on solving technical problems and creating efficient solutions that work well in real-world applications.
           </p>
 
           <p className="mt-6 text-gray-400 leading-relaxed">
-            Having spent most of my career in **Shanghai**, I’ve worked in fast-paced, high-load environments, mastering **event-driven systems** with **RabbitMQ** and **Kafka**, and optimizing databases for peak performance. From **service decomposition** to solving complex production issues, I am passionate about building robust, scalable solutions.
+            I prefer straightforward work and value responsibility and collaboration. I’m always looking for ways to improve my skills and deliver clean, performant code.
           </p>
 
           <p className="mt-6 text-gray-500 leading-relaxed">
-            Recently relocated to **St. Petersburg**, I am now seeking new opportunities in **remote or hybrid backend roles**, where I can contribute my expertise and continue growing in a dynamic environment.
+            Recently relocated to **St. Petersburg**, I’m now seeking opportunities in **remote or hybrid backend roles**, where I can continue growing and contributing to dynamic projects.
           </p>
         </motion.div>
 
