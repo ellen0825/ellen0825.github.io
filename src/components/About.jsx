@@ -20,15 +20,15 @@ export default function About() {
           </h2>
 
           <p className="text-gray-300 leading-relaxed">
-            I’m a Full-Stack Developer with 5 years of experience in both backend and frontend development. I specialize in building reliable, scalable systems with **FastAPI**, **Spring Boot**, and **React**. My focus is on solving technical problems and creating efficient solutions that work well in real-world applications.
+            I’m a Full-Stack Developer with **5 years of experience** in both backend and frontend development. I specialize in building **reliable, scalable systems** using **FastAPI**, **Spring Boot**, and **React**. I’m focused on solving technical challenges and creating efficient, real-world solutions.
           </p>
 
           <p className="mt-6 text-gray-400 leading-relaxed">
-            I prefer straightforward work and value responsibility and collaboration. I’m always looking for ways to improve my skills and deliver clean, performant code.
+            I value straightforward work, responsibility, and collaboration. Always looking for ways to improve my skills and deliver clean, performant code.
           </p>
 
           <p className="mt-6 text-gray-500 leading-relaxed">
-            Recently relocated to **St. Petersburg**, I’m now seeking opportunities in **remote or hybrid backend roles**, where I can continue growing and contributing to dynamic projects.
+            Recently relocated to **St. Petersburg**, I’m actively looking for **remote or hybrid backend roles**, where I can contribute to dynamic, impactful projects.
           </p>
         </motion.div>
 
@@ -45,7 +45,7 @@ export default function About() {
               Backend Focus
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              **High-load REST API development**, building **asynchronous Python systems**, and **microservice-based architectures**. Designing systems that scale with traffic and ensure high availability.
+              **High-load REST API development**, building **asynchronous Python systems**, and creating **microservice-based architectures**. Designing scalable systems that ensure high availability.
             </p>
           </div>
 
@@ -54,7 +54,7 @@ export default function About() {
               Data & Performance
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              **PostgreSQL performance optimization** through **execution plan analysis**, **indexing strategies**, and **raw SQL optimization**. **Redis** caching to handle load and improve query performance.
+              **PostgreSQL optimization** through **execution plan analysis**, **indexing**, and **raw SQL optimization**. Using **Redis** for caching to handle load and improve performance.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ export default function About() {
               Production Experience
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Building and managing **CI/CD pipelines**, ensuring **Docker deployments** are seamless and efficient, and leading **production incident investigations**. Focused on **reliability improvements** and long-term system stability.
+              Managing **CI/CD pipelines**, ensuring **Docker deployments** are efficient, and leading **production incident investigations**. Focused on **reliability** and **long-term stability**.
             </p>
           </div>
         </motion.div>

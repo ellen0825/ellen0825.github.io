@@ -20,7 +20,7 @@ export default function Footer() {
             </h3>
 
             <p className="mt-3 text-gray-500 text-sm max-w-md leading-relaxed">
-              Architecting backend systems with precision, scalability, and resilience in mind. Focused on long-term sustainability and performance.
+              Backend systems architecting with a focus on precision, scalability, and long-term sustainability. Passionate about performance and system resilience.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export default function Footer() {
           </p>
 
           <p className="mt-3 md:mt-0">
-            Crafted with precision and long-term architectural intent.
+            Crafted with precision and built for long-term architectural intent.
           </p>
         </div>
 

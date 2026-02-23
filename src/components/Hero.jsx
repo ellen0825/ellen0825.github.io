@@ -16,17 +16,17 @@ export default function Hero() {
           </h1>
 
           <h2 className="mt-3 text-2xl text-blue-400 font-medium tracking-wide">
-            Senior Backend Engineer
+            Senior Full-Stack Developer
           </h2>
 
           <p className="mt-8 text-gray-400 leading-relaxed max-w-xl">
-            I am a Senior Backend Engineer with over 5 years of experience in building scalable, resilient, and high-performance backend systems.  
-            My expertise spans **Python (FastAPI, async programming)**, **microservices architecture**, and **PostgreSQL optimization**. 
-            Passionate about creating production-grade systems that power mission-critical applications.
+            I’m a Full-Stack Developer with **5 years of experience** in both backend and frontend development. 
+            I specialize in building **reliable, scalable systems** with **FastAPI**, **Spring Boot**, and **React**. 
+            My focus is on solving technical problems and creating efficient solutions that work well in real-world applications.
           </p>
 
           <p className="mt-4 text-gray-500 text-sm tracking-wide">
-            Available for Remote Opportunities
+            Available for **Remote Opportunities**.
           </p>
 
           <div className="mt-12 flex gap-6">

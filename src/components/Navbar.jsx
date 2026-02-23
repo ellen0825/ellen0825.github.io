@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
 
         {/* LOGO */}
-       <div className="text-white text-lg font-light tracking-wider">
+        <div className="text-white text-lg font-light tracking-wider">
           ELLEN <span className="text-blue-400">M.</span>
         </div>
 
@@ -34,6 +34,14 @@ export default function Navbar() {
           >
             Contact
           </a>
+
+          {/* SHORT PHRASE (SIMPLE) BELOW PROJECTS */}
+          <a
+            href="#engineering" // Update this link to the desired section or URL
+            className="text-gray-400 hover:text-blue-400 transition duration-300 text-sm italic"
+          >
+            Resilient Engineering
+          </a>
         </div>
 
         {/* MOBILE BUTTON */}
@@ -56,6 +64,9 @@ export default function Navbar() {
           </a>
           <a href="#contact" className="block hover:text-blue-400 transition">
             Contact
+          </a>
+          <a href="#engineering" className="block hover:text-blue-400 transition mt-4">
+            Resilient Engineering
           </a>
         </div>
       )}
