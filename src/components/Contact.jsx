@@ -38,11 +38,11 @@ export default function Contact() {
             </h3>
 
             <p className="text-gray-400 leading-relaxed max-w-xl">
-              I am currently seeking **remote** or **hybrid** backend engineering opportunities. My expertise lies in creating scalable, performant, and resilient backend systems, with a particular focus on **distributed architectures** and **performance optimization**.
+              I am currently looking for **remote** backend engineering roles where I can leverage my skills in **building scalable, performant, and resilient systems**. With my expertise in **distributed architectures** and **performance optimization**, I am eager to contribute to teams working on high-impact projects.
             </p>
 
             <p className="mt-6 text-gray-500 text-sm leading-relaxed">
-              If you are working on systems that require **long-term scalability**, **reliability**, and **clear architectural design**, I’d love to explore how I can contribute to your team.
+              If you're seeking someone to work on **high-load systems**, **performance optimization**, or **complex production issues**, I’d be excited to discuss how I can help make a difference in your team.
             </p>
           </motion.div>
 
