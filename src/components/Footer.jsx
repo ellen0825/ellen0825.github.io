@@ -45,7 +45,7 @@ export default function Footer() {
         {/* Bottom Line */}
         <div className="mt-8 flex flex-col md:flex-row justify-between items-center text-gray-600 text-xs tracking-wide">
           <p>
-            © {new Date().getFullYear()} Арина Мартинелли. Все права защищены.
+            © {new Date().getFullYear()} Эллен Мартинелли. Все права защищены.
           </p>
 
           <p className="mt-3 md:mt-0">
