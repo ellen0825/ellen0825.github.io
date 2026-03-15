@@ -32,7 +32,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="bg-black text-white px-6 py-40 relative overflow-hidden"
+      className="bg-black text-white px-6 py-40  overflow-hidden"
     >
       <div className="max-w-6xl mx-auto">
 
