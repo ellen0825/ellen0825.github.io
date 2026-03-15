@@ -8,7 +8,7 @@ const projects = [
     tech: ["React", "Node.js", "FastAPI", "PostgreSQL", "Docker"],
     github: "https://github.com/ellen0825/ecommerce-assignment.git",
     image:
-      "https://images.unsplash.com/photo-1557821552-17105176677c"
+      ""
   },
   {
   title: "Corporate Portal (WordPress & PHP)",
@@ -17,14 +17,14 @@ const projects = [
   tech: ["PHP", "WordPress", "MySQL", "JavaScript"],
   github: "https://github.com/ellen0825/wordpress-corporate-portal.git",
   image:
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+    ""
   },
   {
       title: "Real-Time Chat Application (Capstone Project)",
       description: "A real-time chat application built as part of my final year project. It uses React for the frontend, FastAPI for the backend, and WebSockets for real-time communication. Designed and developed from scratch as a personal learning project to enhance my full-stack development skills.",
       tech: ["React", "FastAPI", "WebSockets", "PostgreSQL"],
       github: "https://github.com/ellen0825/fastapi-react-chat-app.git",
-      image: "https://images.unsplash.com/photo-1604014231537-726d42c587d6"
+      image: ""
   }
 ];
 
