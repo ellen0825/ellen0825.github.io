@@ -1,96 +1,119 @@
 import { motion } from "framer-motion";
 
+const projects = [
+  {
+    title: "Портал для WordPress & PHP",
+    description:
+      "Разработка корпоративного портала на WordPress с кастомной темой, интеграцией плагинов и форм.",
+    tech: ["PHP", "WordPress", "MySQL", "JavaScript"],
+    github:
+      "https://github.com/ellen0825/jongrover-building-a-wordpress-theme-from-scratch",
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+  },
+  {
+    title: "Full-Stack Web App (E-Commerce)",
+    description:
+      "Интернет-магазин с авторизацией пользователей, управлением продуктами и API интеграцией.",
+    tech: ["React", "Node.js", "FastAPI", "PostgreSQL"],
+    github: "https://github.com/ellen0825/e-commerce",
+    image:
+      "https://images.unsplash.com/photo-1557821552-17105176677c"
+  }
+];
+
 export default function Projects() {
   return (
     <section
       id="projects"
-      className="bg-black text-white px-6 py-40 "
+      className="bg-black text-white px-6 py-40 relative overflow-hidden"
     >
-      <div className="w-full">
-         <motion.h2
-          initial={{ opacity: 0, y: 40 }}
+      <div className="max-w-6xl mx-auto">
+
+        {/* TITLE */}
+        <motion.h2
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-4xl font-light tracking-tight mb-16 text-left max-w-6xl mx-auto"
+          className="text-4xl font-light tracking-tight mb-20"
         >
           Мои проекты
         </motion.h2>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+        {/* GRID */}
+        <div className="grid md:grid-cols-2 gap-16">
 
-          {/* PROJECT CARD 1 */}
-          <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-gray-800 p-4 rounded-xl shadow-lg w-full"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          >
-            <h3 className="text-xl text-blue-400 font-medium">
-              Портал для WordPress & PHP
-            </h3>
-            <p className="mt-2 text-gray-300 text-sm">
-              Разработка и доработка корпоративного портала на <strong>WordPress</strong> с интеграцией плагинов, форм обратной связи и пользовательских модулей.
-            </p>
+          {projects.map((project, i) => (
 
-            <div className="mt-4 text-sm text-gray-400">
-              <p><span className="text-white">Технологии:</span> PHP, WordPress, MySQL, HTML, CSS, JS</p>
-              <p><span className="text-white">Фокус:</span> Backend & Frontend интеграция, адаптивная верстка</p>
-              <p><span className="text-white">Ответственность:</span> Полная разработка и оптимизация интерфейсов</p>
-            </div>
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: i * 0.2 }}
+              whileHover={{ y: -12 }}
+              className="group relative rounded-2xl overflow-hidden border border-gray-800 bg-gray-900/40 backdrop-blur-xl"
+            >
 
-            <div className="mt-6 flex justify-between gap-4">
-              <a
-                href="https://github.com/ellen0825/jongrover-building-a-wordpress-theme-from-scratch"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-5 py-2 bg-blue-500 text-black rounded-md font-medium hover:bg-blue-400 transition"
-              >
-                GitHub
-              </a>
+              {/* GRADIENT BORDER */}
+              <div className="group relative rounded-2xl overflow-hidden border border-gray-800 bg-gray-900/40 backdrop-blur-xl" />
 
-            </div>
-          </motion.div>
+              {/* IMAGE */}
+              <div className="h-52 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt=""
+               className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+                />
+              </div>
 
-          {/* PROJECT CARD 2 */}
-          <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-gray-800 p-4 rounded-xl shadow-lg w-full"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          >
-            <h3 className="text-xl text-blue-400 font-medium">
-              Full-Stack веб-приложение (E-Commerce)
-            </h3>
-            <p className="mt-2 text-gray-300 text-sm">
-              Разработка интернет-магазина с авторизацией пользователей, управлением продуктами и заказами, интеграцией с backend API на <strong>Node.js</strong> и <strong>FastAPI</strong>.
-            </p>
+              {/* CONTENT */}
+              <div className="p-6 relative">
 
-            <div className="mt-4 text-sm text-gray-400">
-              <p><span className="text-white">Технологии:</span> React, Node.js, FastAPI, PostgreSQL, MySQL</p>
-              <p><span className="text-white">Фокус:</span> Full-Stack разработка, UI/UX, безопасность и производительность</p>
-              <p><span className="text-white">Ответственность:</span> Полная разработка, интеграция frontend с backend и базами данных</p>
-            </div>
+                <h3 className="text-xl text-blue-400 font-medium">
+                  {project.title}
+                </h3>
 
-            <div className="mt-6 flex justify-between gap-4">
-              <a
-                href="https://github.com/ellen0825/e-commerce"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-5 py-2 bg-blue-500 text-black rounded-md font-medium hover:bg-blue-400 transition"
-              >
-                GitHub
-              </a>
+                <p className="mt-3 text-gray-400 text-sm leading-relaxed">
+                  {project.description}
+                </p>
 
-             
-            </div>
-          </motion.div>
+                {/* TECH STACK */}
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {project.tech.map((tech, index) => (
+                    <motion.span
+                      key={index}
+                      whileHover={{ scale: 1.1 }}
+                      className="text-xs bg-gray-800 px-3 py-1 rounded-full text-gray-300"
+                    >
+                      {tech}
+                    </motion.span>
+                  ))}
+                </div>
+
+                {/* BUTTON */}
+                <div className="mt-6">
+                  <motion.a
+                    whileHover={{ scale: 1.08 }}
+                    whileTap={{ scale: 0.95 }}
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-5 py-2 bg-blue-500 text-black rounded-md font-medium hover:bg-blue-400 transition"
+                  >
+                    GitHub
+                  </motion.a>
+                </div>
+
+              </div>
+
+            </motion.div>
+
+          ))}
 
         </div>
+
       </div>
     </section>
   );

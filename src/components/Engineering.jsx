@@ -1,83 +1,92 @@
 import { motion } from "framer-motion";
 
+const items = [
+  {
+    title: "Frontend & UI",
+    text: "Разработка интерфейсов с использованием React и Vue.js. Работа с макетами из Figma, создание удобных и эффективных пользовательских интерфейсов для e-commerce и корпоративных веб-приложений.",
+    icon: "💻",
+    image: "/frontend-icon.svg"
+  },
+  {
+    title: "Backend & Databases",
+    text: "Разработка REST API с использованием FastAPI и Java, интеграция с PHP-бэкендом (Bitrix, WordPress). Опыт работы с PostgreSQL и MySQL для обработки данных и оптимизации запросов.",
+    icon: "🗄️",
+    image: "/backend-icon.svg"
+  },
+  {
+    title: "CMS & Tools",
+    text: "Интеграция с WordPress и Bitrix для создания и доработки корпоративных сайтов. Использование Git и Docker для CI/CD процессов, автоматизация деплоя и улучшение рабочего процесса команд.",
+    icon: "⚙️",
+    image: "/cms-icon.svg"
+  },
+  {
+    title: "AI & Optimization",
+    text: "Использование нейросетей, таких как ChatGPT и GitHub Copilot, для повышения продуктивности и автоматизации задач. Оптимизация производительности веб-приложений и улучшение UX.",
+    icon: "🤖",
+    image: "/ai-icon.svg"
+  }
+];
+
 export default function Engineering() {
   return (
-    <section
-      id="engineering"
-      className="min-h-screen bg-black px-6 py-32 flex items-center"
-    >
-      <div className="max-w-6xl mx-auto w-full">
-
+    <section id="engineering" className="bg-black text-white px-6 py-40">
+      <div className="max-w-6xl mx-auto">
         {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mb-24"
+          className="mb-32"
         >
-          <h2 className="text-4xl md:text-5xl font-light text-white tracking-tight">
-            Engineering Approach
-          </h2>
-
+          <h2 className="text-4xl md:text-5xl font-light tracking-tight">Engineering Approach</h2>
           <div className="mt-6 h-[1px] w-28 bg-blue-500" />
-
           <p className="mt-8 text-gray-400 max-w-2xl leading-relaxed">
-            Я Full-Stack веб-разработчик с опытом работы более 3 лет. Мой подход заключается в создании надежных, адаптивных и удобных систем. Я сосредоточена на оптимизации производительности сайтов, чистом коде и эффективной интеграции frontend и backend решений, используя как современные фреймворки, так и CMS платформы.
+            Я Full-Stack разработчик с более чем 5 лет опыта в создании масштабируемых и производительных веб-приложений. Мой подход фокусируется на создании чистой архитектуры и эффективной интеграции технологий для решения реальных задач.
           </p>
         </motion.div>
 
-        {/* GRID */}
-        <div className="grid md:grid-cols-2 gap-20">
+        {/* TIMELINE */}
+        <div className="relative">
+          {/* CENTER LINE */}
+          <div className="absolute left-1/2 top-0 w-[1px] h-full bg-gray-800 transform -translate-x-1/2" />
+          <div className="space-y-24">
+            {items.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7 }}
+                viewport={{ once: true }}
+                className={`relative grid md:grid-cols-2 gap-12 items-center ${
+                  i % 2 === 0 ? "" : "md:flex-row-reverse"
+                }`}
+              >
+                {/* CONTENT */}
+                <div className={`${i % 2 === 0 ? "md:text-right" : ""}`}>
+                  <h3 className="text-xl text-white mb-4">{item.title}</h3>
+                  <p className="text-gray-400 leading-relaxed text-sm">{item.text}</p>
+                </div>
 
-          {/* LEFT COLUMN */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9 }}
-            viewport={{ once: true }}
-            className="space-y-16"
-          >
-            <div>
-              <h3 className="text-white text-xl mb-4">Frontend & UI</h3>
-              <p className="text-gray-400 leading-relaxed">
-                Разработка адаптивных интерфейсов с использованием <strong>React</strong>, <strong>Vue.js</strong>, <strong>JavaScript (ES6+)</strong>, HTML5 и CSS3 (SASS, Tailwind). Работа по макетам из <strong>Figma</strong>, оптимизация пользовательского опыта и производительности страниц.
-              </p>
-            </div>
+                {/* IMAGE */}
+                <div className="flex justify-center items-center relative">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-20 h-20 object-contain"
+                    style={{ filter: "invert(1)" }} // 아이콘을 밝게 보이게 하는 필터
+                  />
+                </div>
 
-            <div>
-              <h3 className="text-white text-xl mb-4">Backend & Databases</h3>
-              <p className="text-gray-400 leading-relaxed">
-                Разработка <strong>REST API</strong> с использованием <strong>FastAPI</strong>, <strong>Node.js</strong> и <strong>PHP</strong>. Опыт работы с базами данных <strong>MySQL</strong> и <strong>PostgreSQL</strong>, настройка и оптимизация запросов, интеграция с frontend.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* RIGHT COLUMN */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-            className="space-y-16"
-          >
-            <div>
-              <h3 className="text-white text-xl mb-4">CMS & Tools</h3>
-              <p className="text-gray-400 leading-relaxed">
-                Опыт работы с <strong>WordPress</strong> и <strong>1C-Bitrix</strong> (создание и доработка сайтов, интеграция форм и плагинов). Работа с <strong>Git</strong>/<strong>GitLab</strong>, базовое использование <strong>Docker</strong> и CI/CD для тестирования и деплоя проектов.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-white text-xl mb-4">AI & Optimization</h3>
-              <p className="text-gray-400 leading-relaxed">
-                Активное использование нейросетей (<strong>ChatGPT</strong>, <strong>GitHub Copilot</strong>, <strong>MidJourney</strong>) для ускорения разработки кода, генерации контента и макетов. Оптимизация загрузки страниц и производительности сайтов, улучшение интерфейсов для разных устройств.
-              </p>
-            </div>
-          </motion.div>
-
+                {/* TIMELINE NODE */}
+                <div
+                  className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border border-blue-400 shadow-lg"
+                  style={{ zIndex: 2 }}
+                />
+              </motion.div>
+            ))}
+          </div>
         </div>
-
       </div>
     </section>
   );
