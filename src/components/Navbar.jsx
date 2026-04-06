@@ -57,7 +57,6 @@ export default function Navbar() {
             Li Yanmei
           </span>
         </motion.div>
-
         {/* DESKTOP */}
         <div className="hidden md:flex gap-10 text-sm uppercase tracking-widest">
           {links.map(link => {
