@@ -42,8 +42,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="min-h-screen bg-black flex flex-col items-center px-6 py-32">
-      <div className="max-w-7xl w-full">
+       <section id="projects" className="bg-black text-white px-6 py-40 overflow-hidden">
+      <div className="max-w-6xl mx-auto">
 
         {/* HEADER */}
         <motion.div
